@@ -18,7 +18,7 @@ A comprehensive skill for building modern fullstack monorepo applications using 
 ### 1. Initialize a New Monorepo
 
 ```bash
-python scripts/init_project.py my-monorepo
+python ~/.claude/skills/monorepo-developer/scripts/init_project.py my-monorepo
 cd my-monorepo
 ```
 
@@ -41,13 +41,13 @@ bun run dev
 
 ```bash
 # Generate backend service
-python scripts/generate_package.py api-service --type backend
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py api-service --type backend
 
 # Generate frontend app
-python scripts/generate_package.py admin-panel --type frontend
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py admin-panel --type frontend
 
 # Generate shared library
-python scripts/generate_package.py utils --type library
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py utils --type library
 ```
 
 ### 4. Add shadcn/ui Components
@@ -62,8 +62,8 @@ npx shadcn@latest add dialog
 Or use the script:
 
 ```bash
-python scripts/add_component.py button card dialog --package frontend
-python scripts/add_component.py --preset forms --package frontend
+python ~/.claude/skills/monorepo-developer/scripts/add_component.py button card dialog --package frontend
+python ~/.claude/skills/monorepo-developer/scripts/add_component.py --preset forms --package frontend
 ```
 
 ## Project Structure
@@ -104,7 +104,7 @@ my-monorepo/
 Initialize a new monorepo project:
 
 ```bash
-python scripts/init_project.py <project-name> [options]
+python ~/.claude/skills/monorepo-developer/scripts/init_project.py <project-name> [options]
 ```
 
 **Options:**
@@ -116,7 +116,7 @@ python scripts/init_project.py <project-name> [options]
 Generate a new package in the monorepo:
 
 ```bash
-python scripts/generate_package.py <package-name> --type <type> [--project-path <path>]
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py <package-name> --type <type> [--project-path <path>]
 ```
 
 **Package Types:**
@@ -129,14 +129,14 @@ python scripts/generate_package.py <package-name> --type <type> [--project-path 
 Add shadcn/ui components to frontend packages:
 
 ```bash
-python scripts/add_component.py [components...] [--package <name>] [--project-path <path>]
+python ~/.claude/skills/monorepo-developer/scripts/add_component.py [components...] [--package <name>] [--project-path <path>]
 ```
 
 **Examples:**
 ```bash
-python scripts/add_component.py button card dialog
-python scripts/add_component.py --preset forms
-python scripts/add_component.py --list
+python ~/.claude/skills/monorepo-developer/scripts/add_component.py button card dialog
+python ~/.claude/skills/monorepo-developer/scripts/add_component.py --preset forms
+python ~/.claude/skills/monorepo-developer/scripts/add_component.py --list
 ```
 
 ### generate_component.py
@@ -144,7 +144,7 @@ python scripts/add_component.py --list
 Generate new React components with templates:
 
 ```bash
-python scripts/generate_component.py <component-name> [--type <type>] [--directory <dir>] [--package <name>]
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py <component-name> [--type <type>] [--directory <dir>] [--package <name>]
 ```
 
 **Component Types:**
@@ -158,9 +158,9 @@ python scripts/generate_component.py <component-name> [--type <type>] [--directo
 
 **Examples:**
 ```bash
-python scripts/generate_component.py UserCard --type card
-python scripts/generate_component.py LoginForm --type form
-python scripts/generate_component.py UserList --type list
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py UserCard --type card
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py LoginForm --type form
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py UserList --type list
 ```
 
 ### generate_hook.py
@@ -168,7 +168,7 @@ python scripts/generate_component.py UserList --type list
 Generate custom React hooks:
 
 ```bash
-python scripts/generate_hook.py <hook-name> [--type <type>] [--package <name>]
+python ~/.claude/skills/monorepo-developer/scripts/generate_hook.py <hook-name> [--type <type>] [--package <name>]
 ```
 
 **Hook Types:**
@@ -183,9 +183,9 @@ python scripts/generate_hook.py <hook-name> [--type <type>] [--package <name>]
 
 **Examples:**
 ```bash
-python scripts/generate_hook.py useUserData --type fetch
-python scripts/generate_hook.py useLocalStorage --type local-storage
-python scripts/generate_hook.py useDebounce --type debounce
+python ~/.claude/skills/monorepo-developer/scripts/generate_hook.py useUserData --type fetch
+python ~/.claude/skills/monorepo-developer/scripts/generate_hook.py useLocalStorage --type local-storage
+python ~/.claude/skills/monorepo-developer/scripts/generate_hook.py useDebounce --type debounce
 ```
 
 ### generate_page.py
@@ -193,7 +193,7 @@ python scripts/generate_hook.py useDebounce --type debounce
 Generate new React pages:
 
 ```bash
-python scripts/generate_page.py <page-name> [--type <type>] [--package <name>]
+python ~/.claude/skills/monorepo-developer/scripts/generate_page.py <page-name> [--type <type>] [--package <name>]
 ```
 
 **Page Types:**
@@ -205,9 +205,9 @@ python scripts/generate_page.py <page-name> [--type <type>] [--package <name>]
 
 **Examples:**
 ```bash
-python scripts/generate_page.py Dashboard --type dashboard
-python scripts/generate_page.py UserList --type list
-python scripts/generate_page.py UserDetail --type detail
+python ~/.claude/skills/monorepo-developer/scripts/generate_page.py Dashboard --type dashboard
+python ~/.claude/skills/monorepo-developer/scripts/generate_page.py UserList --type list
+python ~/.claude/skills/monorepo-developer/scripts/generate_page.py UserDetail --type detail
 ```
 
 ### generate_docs.py
@@ -215,7 +215,7 @@ python scripts/generate_page.py UserDetail --type detail
 Generate API documentation:
 
 ```bash
-python scripts/generate_docs.py <api-name> [--type <type>] [--package <name>]
+python ~/.claude/skills/monorepo-developer/scripts/generate_docs.py <api-name> [--type <type>] [--package <name>]
 ```
 
 **Documentation Types:**
@@ -224,8 +224,8 @@ python scripts/generate_docs.py <api-name> [--type <type>] [--package <name>]
 
 **Examples:**
 ```bash
-python scripts/generate_docs.py UserAPI --type markdown
-python scripts/generate_docs.py ProductAPI --type openapi
+python ~/.claude/skills/monorepo-developer/scripts/generate_docs.py UserAPI --type markdown
+python ~/.claude/skills/monorepo-developer/scripts/generate_docs.py ProductAPI --type openapi
 ```
 
 ### add_auth.py
@@ -233,7 +233,7 @@ python scripts/generate_docs.py ProductAPI --type openapi
 Add authentication to backend:
 
 ```bash
-python scripts/add_auth.py [--type <type>] [--package <name>]
+python ~/.claude/skills/monorepo-developer/scripts/add_auth.py [--type <type>] [--package <name>]
 ```
 
 **Authentication Types:**
@@ -249,9 +249,9 @@ python scripts/add_auth.py [--type <type>] [--package <name>]
 
 **Examples:**
 ```bash
-python scripts/add_auth.py --type local
-python scripts/add_auth.py --type google
-python scripts/add_auth.py --type both
+python ~/.claude/skills/monorepo-developer/scripts/add_auth.py --type local
+python ~/.claude/skills/monorepo-developer/scripts/add_auth.py --type google
+python ~/.claude/skills/monorepo-developer/scripts/add_auth.py --type both
 ```
 
 ### add_avatar.py
@@ -259,7 +259,7 @@ python scripts/add_auth.py --type both
 Add avatar upload functionality:
 
 ```bash
-python scripts/add_avatar.py [--type <type>] [--package <name>]
+python ~/.claude/skills/monorepo-developer/scripts/add_avatar.py [--type <type>] [--package <name>]
 ```
 
 **Features:**
@@ -277,8 +277,8 @@ python scripts/add_avatar.py [--type <type>] [--package <name>]
 
 **Examples:**
 ```bash
-python scripts/add_avatar.py --type backend
-python scripts/add_avatar.py --type frontend
+python ~/.claude/skills/monorepo-developer/scripts/add_avatar.py --type backend
+python ~/.claude/skills/monorepo-developer/scripts/add_avatar.py --type frontend
 ```
 
 ### validate_skill.py
@@ -286,7 +286,7 @@ python scripts/add_avatar.py --type frontend
 Validate the skill structure:
 
 ```bash
-python scripts/validate_skill.py
+python ~/.claude/skills/monorepo-developer/scripts/validate_skill.py
 ```
 
 ## Tech Stack

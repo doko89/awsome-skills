@@ -5,7 +5,7 @@ Get started with React Developer skill in 5 minutes!
 ## 1. Create a New Project
 
 ```bash
-python scripts/init_project.py my-app
+python ~/.claude/skills/react-developer/scripts/init_project.py my-app
 cd my-app
 ```
 
@@ -27,46 +27,46 @@ Open http://localhost:5173 in your browser.
 
 ```bash
 # Add essential components
-python ../scripts/add_component.py --essential
+python ~/.claude/skills/react-developer/scripts/add_component.py --essential
 
 # Or add specific components
-python ../scripts/add_component.py button card dialog input
+python ~/.claude/skills/react-developer/scripts/add_component.py button card dialog input
 ```
 
 ## 4. Generate a Page
 
 ```bash
 # Basic page
-python ../scripts/generate_page.py home
+python ~/.claude/skills/react-developer/scripts/generate_page.py home
 
 # Page with data fetching
-python ../scripts/generate_page.py users --type=data
+python ~/.claude/skills/react-developer/scripts/generate_page.py users --type=data
 
 # Page with form
-python ../scripts/generate_page.py contact --type=form
+python ~/.claude/skills/react-developer/scripts/generate_page.py contact --type=form
 ```
 
 ## 5. Generate Components
 
 ```bash
 # Card component
-python ../scripts/generate_component.py UserCard --type=card
+python ~/.claude/skills/react-developer/scripts/generate_component.py UserCard --type=card
 
 # Form component
-python ../scripts/generate_component.py LoginForm --type=form
+python ~/.claude/skills/react-developer/scripts/generate_component.py LoginForm --type=form
 
 # List component
-python ../scripts/generate_component.py UserList --type=list
+python ~/.claude/skills/react-developer/scripts/generate_component.py UserList --type=list
 ```
 
 ## 6. Generate Custom Hooks
 
 ```bash
 # Data fetching hook
-python ../scripts/generate_hook.py useFetchUsers --type=fetch
+python ~/.claude/skills/react-developer/scripts/generate_hook.py useFetchUsers --type=fetch
 
 # LocalStorage hook
-python ../scripts/generate_hook.py useLocalStorage --type=local-storage
+python ~/.claude/skills/react-developer/scripts/generate_hook.py useLocalStorage --type=local-storage
 ```
 
 ## 7. Set Up Routing
@@ -149,13 +149,13 @@ npm run lint
 npx shadcn@latest add <component-name>
 
 # Generate page
-python ../scripts/generate_page.py <name> [--type=basic|data|form]
+python ~/.claude/skills/react-developer/scripts/generate_page.py <name> [--type=basic|data|form]
 
 # Generate component
-python ../scripts/generate_component.py <name> [--type=basic|children|state|form|card|list]
+python ~/.claude/skills/react-developer/scripts/generate_component.py <name> [--type=basic|children|state|form|card|list]
 
 # Generate hook
-python ../scripts/generate_hook.py <name> [--type=basic|fetch|local-storage|debounce|media-query|toggle]
+python ~/.claude/skills/react-developer/scripts/generate_hook.py <name> [--type=basic|fetch|local-storage|debounce|media-query|toggle]
 ```
 
 ## Tips

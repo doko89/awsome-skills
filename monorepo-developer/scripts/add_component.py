@@ -155,9 +155,9 @@ def main():
     if not args.preset and not args.components:
         print("✗ Please specify components to add or use --preset")
         print("\nUsage:")
-        print("  python scripts/add_component.py button card dialog")
-        print("  python scripts/add_component.py --preset forms")
-        print("  python scripts/add_component.py --list")
+        print("  python ~/.claude/skills/monorepo-developer/scripts/add_component.py button card dialog")
+        print("  python ~/.claude/skills/monorepo-developer/scripts/add_component.py --preset forms")
+        print("  python ~/.claude/skills/monorepo-developer/scripts/add_component.py --list")
         sys.exit(1)
     
     print(f"\n✅ Components added successfully!\n")

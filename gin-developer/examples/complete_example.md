@@ -5,7 +5,7 @@ This example demonstrates building a complete blog API with users, posts, and co
 ## Step 1: Initialize Project
 
 ```bash
-python scripts/init_project.py blog-api
+python ~/.claude/skills/gin-developer/scripts/init_project.py blog-api
 cd blog-api
 ```
 
@@ -35,25 +35,25 @@ CORS_ALLOWED_ORIGINS=http://localhost:3000
 ### Generate User Domain
 
 ```bash
-python scripts/generate_domain.py user --fields "username:string,email:string,password:string,bio:string,avatar:string,active:bool"
+python ~/.claude/skills/gin-developer/scripts/generate_domain.py user --fields "username:string,email:string,password:string,bio:string,avatar:string,active:bool"
 ```
 
 ### Generate Post Domain
 
 ```bash
-python scripts/generate_domain.py post --fields "title:string,content:string,slug:string,published:bool,user_id:uuid,views:int"
+python ~/.claude/skills/gin-developer/scripts/generate_domain.py post --fields "title:string,content:string,slug:string,published:bool,user_id:uuid,views:int"
 ```
 
 ### Generate Comment Domain
 
 ```bash
-python scripts/generate_domain.py comment --fields "content:string,post_id:uuid,user_id:uuid,approved:bool"
+python ~/.claude/skills/gin-developer/scripts/generate_domain.py comment --fields "content:string,post_id:uuid,user_id:uuid,approved:bool"
 ```
 
 ### Generate Category Domain
 
 ```bash
-python scripts/generate_domain.py category --fields "name:string,slug:string,description:string"
+python ~/.claude/skills/gin-developer/scripts/generate_domain.py category --fields "name:string,slug:string,description:string"
 ```
 
 ## Step 4: Update Main File

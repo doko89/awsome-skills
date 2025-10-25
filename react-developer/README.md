@@ -19,7 +19,7 @@ A comprehensive skill for building modern React applications with Vite, TypeScri
 ### 1. Initialize a New Project
 
 ```bash
-python scripts/init_project.py my-app
+python ~/.claude/skills/react-developer/scripts/init_project.py my-app
 cd my-app
 npm run dev
 ```
@@ -28,52 +28,52 @@ npm run dev
 
 ```bash
 # Add essential components
-python scripts/add_component.py --essential
+python ~/.claude/skills/react-developer/scripts/add_component.py --essential
 
 # Add specific components
-python scripts/add_component.py button card dialog
+python ~/.claude/skills/react-developer/scripts/add_component.py button card dialog
 
 # Add form components
-python scripts/add_component.py --preset forms
+python ~/.claude/skills/react-developer/scripts/add_component.py --preset forms
 ```
 
 ### 3. Generate Pages
 
 ```bash
 # Basic page
-python scripts/generate_page.py about
+python ~/.claude/skills/react-developer/scripts/generate_page.py about
 
 # Page with data fetching
-python scripts/generate_page.py users --type=data
+python ~/.claude/skills/react-developer/scripts/generate_page.py users --type=data
 
 # Page with form
-python scripts/generate_page.py contact --type=form
+python ~/.claude/skills/react-developer/scripts/generate_page.py contact --type=form
 ```
 
 ### 4. Generate Components
 
 ```bash
 # Basic component
-python scripts/generate_component.py UserCard
+python ~/.claude/skills/react-developer/scripts/generate_component.py UserCard
 
 # Form component
-python scripts/generate_component.py LoginForm --type=form
+python ~/.claude/skills/react-developer/scripts/generate_component.py LoginForm --type=form
 
 # List component
-python scripts/generate_component.py UserList --type=list
+python ~/.claude/skills/react-developer/scripts/generate_component.py UserList --type=list
 ```
 
 ### 5. Generate Custom Hooks
 
 ```bash
 # Data fetching hook
-python scripts/generate_hook.py useFetchUsers --type=fetch
+python ~/.claude/skills/react-developer/scripts/generate_hook.py useFetchUsers --type=fetch
 
 # LocalStorage hook
-python scripts/generate_hook.py useLocalStorage --type=local-storage
+python ~/.claude/skills/react-developer/scripts/generate_hook.py useLocalStorage --type=local-storage
 
 # Toggle hook
-python scripts/generate_hook.py useToggle --type=toggle
+python ~/.claude/skills/react-developer/scripts/generate_hook.py useToggle --type=toggle
 ```
 
 ## Scripts
@@ -83,7 +83,7 @@ python scripts/generate_hook.py useToggle --type=toggle
 Initialize a new React project with all dependencies.
 
 ```bash
-python scripts/init_project.py <project-name> [options]
+python ~/.claude/skills/react-developer/scripts/init_project.py <project-name> [options]
 ```
 
 **Options:**
@@ -93,7 +93,7 @@ python scripts/init_project.py <project-name> [options]
 
 **Example:**
 ```bash
-python scripts/init_project.py my-app
+python ~/.claude/skills/react-developer/scripts/init_project.py my-app
 ```
 
 ### add_component.py
@@ -101,7 +101,7 @@ python scripts/init_project.py my-app
 Add shadcn/ui components to your project.
 
 ```bash
-python scripts/add_component.py [components...] [options]
+python ~/.claude/skills/react-developer/scripts/add_component.py [components...] [options]
 ```
 
 **Options:**
@@ -121,10 +121,10 @@ python scripts/add_component.py [components...] [options]
 
 **Examples:**
 ```bash
-python scripts/add_component.py button card
-python scripts/add_component.py --preset forms
-python scripts/add_component.py --essential
-python scripts/add_component.py --registry https://www.shadcn.io/registry/ai.json
+python ~/.claude/skills/react-developer/scripts/add_component.py button card
+python ~/.claude/skills/react-developer/scripts/add_component.py --preset forms
+python ~/.claude/skills/react-developer/scripts/add_component.py --essential
+python ~/.claude/skills/react-developer/scripts/add_component.py --registry https://www.shadcn.io/registry/ai.json
 ```
 
 ### generate_page.py
@@ -132,7 +132,7 @@ python scripts/add_component.py --registry https://www.shadcn.io/registry/ai.jso
 Generate a new page component.
 
 ```bash
-python scripts/generate_page.py <name> [options]
+python ~/.claude/skills/react-developer/scripts/generate_page.py <name> [options]
 ```
 
 **Options:**
@@ -141,9 +141,9 @@ python scripts/generate_page.py <name> [options]
 
 **Examples:**
 ```bash
-python scripts/generate_page.py about
-python scripts/generate_page.py users --type=data
-python scripts/generate_page.py contact --type=form
+python ~/.claude/skills/react-developer/scripts/generate_page.py about
+python ~/.claude/skills/react-developer/scripts/generate_page.py users --type=data
+python ~/.claude/skills/react-developer/scripts/generate_page.py contact --type=form
 ```
 
 ### generate_component.py
@@ -151,7 +151,7 @@ python scripts/generate_page.py contact --type=form
 Generate a new React component.
 
 ```bash
-python scripts/generate_component.py <name> [options]
+python ~/.claude/skills/react-developer/scripts/generate_component.py <name> [options]
 ```
 
 **Options:**
@@ -160,9 +160,9 @@ python scripts/generate_component.py <name> [options]
 
 **Examples:**
 ```bash
-python scripts/generate_component.py UserCard
-python scripts/generate_component.py LoginForm --type=form
-python scripts/generate_component.py Header --dir=components/layout
+python ~/.claude/skills/react-developer/scripts/generate_component.py UserCard
+python ~/.claude/skills/react-developer/scripts/generate_component.py LoginForm --type=form
+python ~/.claude/skills/react-developer/scripts/generate_component.py Header --dir=components/layout
 ```
 
 ### generate_hook.py
@@ -170,7 +170,7 @@ python scripts/generate_component.py Header --dir=components/layout
 Generate a custom React hook.
 
 ```bash
-python scripts/generate_hook.py <name> [options]
+python ~/.claude/skills/react-developer/scripts/generate_hook.py <name> [options]
 ```
 
 **Options:**
@@ -178,9 +178,9 @@ python scripts/generate_hook.py <name> [options]
 
 **Examples:**
 ```bash
-python scripts/generate_hook.py useFetchData --type=fetch
-python scripts/generate_hook.py useLocalStorage --type=local-storage
-python scripts/generate_hook.py useDebounce --type=debounce
+python ~/.claude/skills/react-developer/scripts/generate_hook.py useFetchData --type=fetch
+python ~/.claude/skills/react-developer/scripts/generate_hook.py useLocalStorage --type=local-storage
+python ~/.claude/skills/react-developer/scripts/generate_hook.py useDebounce --type=debounce
 ```
 
 ## Project Structure
@@ -237,23 +237,23 @@ my-app/
 
 ```bash
 # Initialize project
-python scripts/init_project.py blog-app
+python ~/.claude/skills/react-developer/scripts/init_project.py blog-app
 cd blog-app
 
 # Add components
-python scripts/add_component.py --essential
+python ~/.claude/skills/react-developer/scripts/add_component.py --essential
 
 # Generate pages
-python scripts/generate_page.py home
-python scripts/generate_page.py posts --type=data
-python scripts/generate_page.py create-post --type=form
+python ~/.claude/skills/react-developer/scripts/generate_page.py home
+python ~/.claude/skills/react-developer/scripts/generate_page.py posts --type=data
+python ~/.claude/skills/react-developer/scripts/generate_page.py create-post --type=form
 
 # Generate components
-python scripts/generate_component.py PostCard --type=card
-python scripts/generate_component.py PostList --type=list
+python ~/.claude/skills/react-developer/scripts/generate_component.py PostCard --type=card
+python ~/.claude/skills/react-developer/scripts/generate_component.py PostList --type=list
 
 # Generate hooks
-python scripts/generate_hook.py useFetchPosts --type=fetch
+python ~/.claude/skills/react-developer/scripts/generate_hook.py useFetchPosts --type=fetch
 
 # Run development server
 npm run dev
@@ -310,7 +310,7 @@ Check `tsconfig.json` and `vite.config.ts` for correct path aliases.
 Make sure you've added the component:
 
 ```bash
-python scripts/add_component.py <component-name>
+python ~/.claude/skills/react-developer/scripts/add_component.py <component-name>
 ```
 
 ## Learn More

@@ -711,7 +711,7 @@ def main():
 
     print("  5. Generate NEXTAUTH_SECRET: openssl rand -base64 32")
     print("  6. Add auth components:")
-    print("     python ../scripts/generate_auth_components.py")
+    print("     python ~/.claude/skills/nextjs-developer/scripts/generate_auth_components.py")
     print("  7. Avatar upload endpoint available at: /api/avatar")
 
 

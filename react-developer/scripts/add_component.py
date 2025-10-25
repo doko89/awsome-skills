@@ -105,10 +105,10 @@ def list_components():
         print(f"  • {component:<20} - {description}")
     
     print("\n💡 Usage:")
-    print("  python scripts/add_component.py button")
-    print("  python scripts/add_component.py button card dialog")
-    print("  python scripts/add_component.py --all-forms")
-    print("  python scripts/add_component.py --registry https://www.shadcn.io/registry/ai.json")
+    print("  python ~/.claude/skills/react-developer/scripts/add_component.py button")
+    print("  python ~/.claude/skills/react-developer/scripts/add_component.py button card dialog")
+    print("  python ~/.claude/skills/react-developer/scripts/add_component.py --all-forms")
+    print("  python ~/.claude/skills/react-developer/scripts/add_component.py --registry https://www.shadcn.io/registry/ai.json")
 
 
 def add_preset_group(project_path: Path, group: str) -> bool:
@@ -216,10 +216,10 @@ def main():
     if not args.components:
         print("✗ Error: No components specified")
         print("\nUsage:")
-        print("  python scripts/add_component.py button")
-        print("  python scripts/add_component.py button card dialog")
-        print("  python scripts/add_component.py --list")
-        print("  python scripts/add_component.py --preset essential")
+        print("  python ~/.claude/skills/react-developer/scripts/add_component.py button")
+        print("  python ~/.claude/skills/react-developer/scripts/add_component.py button card dialog")
+        print("  python ~/.claude/skills/react-developer/scripts/add_component.py --list")
+        print("  python ~/.claude/skills/react-developer/scripts/add_component.py --preset essential")
         sys.exit(1)
     
     # Add components

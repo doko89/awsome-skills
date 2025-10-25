@@ -99,7 +99,7 @@ Initialize a new Next.js project with all dependencies configured.
 
 **Usage:**
 ```bash
-python scripts/init_project.py <project-name> [options]
+python ~/.claude/skills/nextjs-developer/scripts/init_project.py <project-name> [options]
 ```
 
 **Options:**
@@ -111,13 +111,13 @@ python scripts/init_project.py <project-name> [options]
 **Example:**
 ```bash
 # Create new project with all features
-python scripts/init_project.py my-app
+python ~/.claude/skills/nextjs-developer/scripts/init_project.py my-app
 
 # Create with Pages Router
-python scripts/init_project.py my-app --pages-router
+python ~/.claude/skills/nextjs-developer/scripts/init_project.py my-app --pages-router
 
 # Create without TypeScript
-python scripts/init_project.py my-app --no-typescript
+python ~/.claude/skills/nextjs-developer/scripts/init_project.py my-app --no-typescript
 ```
 
 **What it does:**
@@ -136,7 +136,7 @@ Add NextAuth.js authentication with Drizzle ORM.
 
 **Usage:**
 ```bash
-python scripts/add_auth.py --provider <local|google|both> [options]
+python ~/.claude/skills/nextjs-developer/scripts/add_auth.py --provider <local|google|both> [options]
 ```
 
 **Options:**
@@ -150,13 +150,13 @@ python scripts/add_auth.py --provider <local|google|both> [options]
 ```bash
 # Add local authentication
 cd my-app
-python ../scripts/add_auth.py --provider local
+python ~/.claude/skills/nextjs-developer/scripts/add_auth.py --provider local
 
 # Add Google OAuth
-python ../scripts/add_auth.py --provider google
+python ~/.claude/skills/nextjs-developer/scripts/add_auth.py --provider google
 
 # Add both local and Google
-python ../scripts/add_auth.py --provider both
+python ~/.claude/skills/nextjs-developer/scripts/add_auth.py --provider both
 ```
 
 **What it does:**
@@ -187,7 +187,7 @@ Add shadcn/ui components to your project.
 
 **Usage:**
 ```bash
-python scripts/add_component.py [component-name] [options]
+python ~/.claude/skills/nextjs-developer/scripts/add_component.py [component-name] [options]
 ```
 
 **Options:**
@@ -200,19 +200,19 @@ python scripts/add_component.py [component-name] [options]
 **Examples:**
 ```bash
 # Add single component
-python scripts/add_component.py button
+python ~/.claude/skills/nextjs-developer/scripts/add_component.py button
 
 # Add multiple components
-python scripts/add_component.py --batch button,card,dialog
+python ~/.claude/skills/nextjs-developer/scripts/add_component.py --batch button,card,dialog
 
 # Add preset group
-python scripts/add_component.py --preset forms
+python ~/.claude/skills/nextjs-developer/scripts/add_component.py --preset forms
 
 # Add from custom registry
-python scripts/add_component.py --registry https://www.shadcn.io/registry/ai.json
+python ~/.claude/skills/nextjs-developer/scripts/add_component.py --registry https://www.shadcn.io/registry/ai.json
 
 # List all components
-python scripts/add_component.py --list
+python ~/.claude/skills/nextjs-developer/scripts/add_component.py --list
 ```
 
 **Available Presets:**
@@ -232,7 +232,7 @@ Generate Next.js pages with different patterns.
 
 **Usage:**
 ```bash
-python scripts/generate_page.py <page-name> [options]
+python ~/.claude/skills/nextjs-developer/scripts/generate_page.py <page-name> [options]
 ```
 
 **Options:**
@@ -248,19 +248,19 @@ python scripts/generate_page.py <page-name> [options]
 **Examples:**
 ```bash
 # Generate basic page
-python scripts/generate_page.py Dashboard --route dashboard
+python ~/.claude/skills/nextjs-developer/scripts/generate_page.py Dashboard --route dashboard
 
 # Generate page with data fetching
-python scripts/generate_page.py Products --type data --route products
+python ~/.claude/skills/nextjs-developer/scripts/generate_page.py Products --type data --route products
 
 # Generate form page
-python scripts/generate_page.py Contact --type form --route contact
+python ~/.claude/skills/nextjs-developer/scripts/generate_page.py Contact --type form --route contact
 
 # Generate protected page
-python scripts/generate_page.py Profile --type protected --route profile
+python ~/.claude/skills/nextjs-developer/scripts/generate_page.py Profile --type protected --route profile
 
 # Generate API route
-python scripts/generate_page.py users --type api --route users
+python ~/.claude/skills/nextjs-developer/scripts/generate_page.py users --type api --route users
 ```
 
 **Page Types:**
@@ -278,7 +278,7 @@ Generate reusable React components.
 
 **Usage:**
 ```bash
-python scripts/generate_component.py <component-name> [options]
+python ~/.claude/skills/nextjs-developer/scripts/generate_component.py <component-name> [options]
 ```
 
 **Options:**
@@ -295,16 +295,16 @@ python scripts/generate_component.py <component-name> [options]
 **Examples:**
 ```bash
 # Generate basic component
-python scripts/generate_component.py Header
+python ~/.claude/skills/nextjs-developer/scripts/generate_component.py Header
 
 # Generate component with state (Client Component)
-python scripts/generate_component.py Counter --type state
+python ~/.claude/skills/nextjs-developer/scripts/generate_component.py Counter --type state
 
 # Generate form component
-python scripts/generate_component.py LoginForm --type form
+python ~/.claude/skills/nextjs-developer/scripts/generate_component.py LoginForm --type form
 
 # Generate card component
-python scripts/generate_component.py ProductCard --type card
+python ~/.claude/skills/nextjs-developer/scripts/generate_component.py ProductCard --type card
 ```
 
 ---
@@ -315,7 +315,7 @@ Generate custom React hooks.
 
 **Usage:**
 ```bash
-python scripts/generate_hook.py <hook-name> [options]
+python ~/.claude/skills/nextjs-developer/scripts/generate_hook.py <hook-name> [options]
 ```
 
 **Options:**
@@ -331,16 +331,16 @@ python scripts/generate_hook.py <hook-name> [options]
 **Examples:**
 ```bash
 # Generate basic hook
-python scripts/generate_hook.py useCounter
+python ~/.claude/skills/nextjs-developer/scripts/generate_hook.py useCounter
 
 # Generate fetch hook
-python scripts/generate_hook.py useUsers --type fetch
+python ~/.claude/skills/nextjs-developer/scripts/generate_hook.py useUsers --type fetch
 
 # Generate localStorage hook
-python scripts/generate_hook.py useTheme --type local-storage
+python ~/.claude/skills/nextjs-developer/scripts/generate_hook.py useTheme --type local-storage
 
 # Generate debounce hook
-python scripts/generate_hook.py useDebounce --type debounce
+python ~/.claude/skills/nextjs-developer/scripts/generate_hook.py useDebounce --type debounce
 ```
 
 ---
@@ -351,7 +351,7 @@ Validate the skill structure and files.
 
 **Usage:**
 ```bash
-python scripts/validate_skill.py
+python ~/.claude/skills/nextjs-developer/scripts/validate_skill.py
 ```
 
 ## Usage Guidelines
@@ -360,19 +360,19 @@ python scripts/validate_skill.py
 
 ```bash
 # Initialize project
-python scripts/init_project.py my-app
+python ~/.claude/skills/nextjs-developer/scripts/init_project.py my-app
 
 # Navigate to project
 cd my-app
 
 # Add authentication
-python ../scripts/add_auth.py --provider both
+python ~/.claude/skills/nextjs-developer/scripts/add_auth.py --provider both
 
 # Add UI components
-python ../scripts/add_component.py --preset essential
+python ~/.claude/skills/nextjs-developer/scripts/add_component.py --preset essential
 
 # Generate pages
-python ../scripts/generate_page.py Dashboard --type protected --route dashboard
+python ~/.claude/skills/nextjs-developer/scripts/generate_page.py Dashboard --type protected --route dashboard
 
 # Start development server
 npm run dev
@@ -381,14 +381,14 @@ npm run dev
 ### 2. Authentication Flow
 
 **Local Authentication:**
-1. Add auth: `python ../scripts/add_auth.py --provider local`
+1. Add auth: `python ~/.claude/skills/nextjs-developer/scripts/add_auth.py --provider local`
 2. Setup database and run migrations
 3. Create sign-up page or use API to create users
 4. Users can sign in at `/auth/signin`
 
 **Google OAuth:**
 1. Create Google OAuth credentials
-2. Add auth: `python ../scripts/add_auth.py --provider google`
+2. Add auth: `python ~/.claude/skills/nextjs-developer/scripts/add_auth.py --provider google`
 3. Add credentials to `.env.local`
 4. Users can sign in with Google at `/auth/signin`
 

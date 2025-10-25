@@ -3,10 +3,10 @@
 Initialize a new Gin project with DDD architecture.
 
 Usage:
-    python init_project.py <project-name> [--module-path <module-path>]
+    python ~/.claude/skills/gin-developer/scripts/init_project.py <project-name> [--module-path <module-path>]
 
 Example:
-    python init_project.py my-api --module-path github.com/myuser/my-api
+    python ~/.claude/skills/gin-developer/scripts/init_project.py my-api --module-path github.com/myuser/my-api
 """
 
 import os
@@ -480,7 +480,7 @@ curl http://localhost:8080/health
 Use the generation script to create new domain components:
 
 ```bash
-python scripts/generate_domain.py <domain-name> --fields "field1:type1,field2:type2"
+python ~/.claude/skills/gin-developer/scripts/generate_domain.py <domain-name> --fields "field1:type1,field2:type2"
 ```
 
 ### Running Tests
@@ -543,7 +543,7 @@ def main():
     print(f"  4. go mod tidy")
     print(f"  5. go run cmd/api/main.go")
     print(f"\nTo generate a domain:")
-    print(f"  python scripts/generate_domain.py <domain-name> --fields \"field1:type1,field2:type2\"")
+    print(f"  python ~/.claude/skills/gin-developer/scripts/generate_domain.py <domain-name> --fields \"field1:type1,field2:type2\"")
 
 
 if __name__ == "__main__":

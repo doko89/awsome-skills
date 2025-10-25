@@ -6,7 +6,7 @@ This guide will walk you through creating a complete Next.js application with au
 
 ```bash
 # Create new Next.js project
-python scripts/init_project.py my-blog
+python ~/.claude/skills/nextjs-developer/scripts/init_project.py my-blog
 
 # Navigate to project
 cd my-blog
@@ -24,7 +24,7 @@ This creates a Next.js project with:
 
 ```bash
 # Add local + Google authentication
-python ../scripts/add_auth.py --provider both
+python ~/.claude/skills/nextjs-developer/scripts/add_auth.py --provider both
 ```
 
 Update `.env.local`:
@@ -51,10 +51,10 @@ npx drizzle-kit migrate
 
 ```bash
 # Add essential components
-python ../scripts/add_component.py --preset essential
+python ~/.claude/skills/nextjs-developer/scripts/add_component.py --preset essential
 
 # Add additional components
-python ../scripts/add_component.py --batch table,pagination,separator
+python ~/.claude/skills/nextjs-developer/scripts/add_component.py --batch table,pagination,separator
 ```
 
 ## Step 4: Generate Pages
@@ -66,25 +66,25 @@ Edit `src/app/page.tsx` for your home page.
 ### Dashboard (Protected)
 
 ```bash
-python ../scripts/generate_page.py Dashboard --type protected --route dashboard
+python ~/.claude/skills/nextjs-developer/scripts/generate_page.py Dashboard --type protected --route dashboard
 ```
 
 ### Blog Posts (Data Fetching)
 
 ```bash
-python ../scripts/generate_page.py Posts --type data --route posts
+python ~/.claude/skills/nextjs-developer/scripts/generate_page.py Posts --type data --route posts
 ```
 
 ### Contact Form
 
 ```bash
-python ../scripts/generate_page.py Contact --type form --route contact
+python ~/.claude/skills/nextjs-developer/scripts/generate_page.py Contact --type form --route contact
 ```
 
 ### API Route for Posts
 
 ```bash
-python ../scripts/generate_page.py posts --type api --route posts
+python ~/.claude/skills/nextjs-developer/scripts/generate_page.py posts --type api --route posts
 ```
 
 ## Step 5: Generate Components
@@ -92,7 +92,7 @@ python ../scripts/generate_page.py posts --type api --route posts
 ### Header Component
 
 ```bash
-python ../scripts/generate_component.py Header --type children
+python ~/.claude/skills/nextjs-developer/scripts/generate_component.py Header --type children
 ```
 
 Edit `src/components/Header.tsx`:
@@ -137,7 +137,7 @@ export function Header() {
 ### Post Card Component
 
 ```bash
-python ../scripts/generate_component.py PostCard --type card
+python ~/.claude/skills/nextjs-developer/scripts/generate_component.py PostCard --type card
 ```
 
 Edit `src/components/PostCard.tsx`:
@@ -177,7 +177,7 @@ export function PostCard({ id, title, excerpt, author, date }: PostCardProps) {
 ### Fetch Posts Hook
 
 ```bash
-python ../scripts/generate_hook.py usePosts --type fetch
+python ~/.claude/skills/nextjs-developer/scripts/generate_hook.py usePosts --type fetch
 ```
 
 Edit `src/hooks/usePosts.ts`:
@@ -293,17 +293,17 @@ Open [http://localhost:3000](http://localhost:3000)
 
 1. **Add Blog Post Creation**
 ```bash
-python ../scripts/generate_page.py CreatePost --type form --route dashboard/posts/new
+python ~/.claude/skills/nextjs-developer/scripts/generate_page.py CreatePost --type form --route dashboard/posts/new
 ```
 
 2. **Add User Profile**
 ```bash
-python ../scripts/generate_page.py Profile --type protected --route profile
+python ~/.claude/skills/nextjs-developer/scripts/generate_page.py Profile --type protected --route profile
 ```
 
 3. **Add Search**
 ```bash
-python ../scripts/generate_component.py SearchBar --type state
+python ~/.claude/skills/nextjs-developer/scripts/generate_component.py SearchBar --type state
 ```
 
 ### Customize Styling
@@ -328,13 +328,13 @@ export default {
 
 ```bash
 # Add data table
-python ../scripts/add_component.py data-table
+python ~/.claude/skills/nextjs-developer/scripts/add_component.py data-table
 
 # Add charts
-python ../scripts/add_component.py --registry https://ui.shadcn.com/registry/charts.json
+python ~/.claude/skills/nextjs-developer/scripts/add_component.py --registry https://ui.shadcn.com/registry/charts.json
 
 # Add AI components
-python ../scripts/add_component.py --registry https://www.shadcn.io/registry/ai.json
+python ~/.claude/skills/nextjs-developer/scripts/add_component.py --registry https://www.shadcn.io/registry/ai.json
 ```
 
 ### Deploy

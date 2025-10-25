@@ -218,9 +218,9 @@ def main():
         print("  2. Test add_component.py by adding components")
         print("  3. Test generate_page.py by generating a page")
         print("\nExample:")
-        print("  python scripts/init_project.py test-app")
+        print("  python ~/.claude/skills/react-developer/scripts/init_project.py test-app")
         print("  cd test-app")
-        print("  python ../scripts/add_component.py button card")
+        print("  python ~/.claude/skills/react-developer/scripts/add_component.py button card")
         return 0
     else:
         print("\n❌ Some validations failed. Please fix the issues above.")

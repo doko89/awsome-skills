@@ -6,16 +6,16 @@
 
 ```bash
 # API Gateway
-python scripts/generate_package.py api-gateway --type backend
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py api-gateway --type backend
 
 # User Service
-python scripts/generate_package.py user-service --type backend
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py user-service --type backend
 
 # Product Service
-python scripts/generate_package.py product-service --type backend
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py product-service --type backend
 
 # Auth Service
-python scripts/generate_package.py auth-service --type backend
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py auth-service --type backend
 ```
 
 ### Service Communication
@@ -52,20 +52,20 @@ export default {
 
 ```bash
 # Main Dashboard
-python scripts/generate_package.py dashboard --type frontend
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py dashboard --type frontend
 
 # Admin Panel
-python scripts/generate_package.py admin-panel --type frontend
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py admin-panel --type frontend
 
 # Mobile Web
-python scripts/generate_package.py mobile-app --type frontend
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py mobile-app --type frontend
 ```
 
 ### Shared UI Library
 
 ```bash
 # Create UI library
-python scripts/generate_package.py ui-library --type library
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py ui-library --type library
 ```
 
 `packages/ui-library/src/index.ts`:
@@ -227,7 +227,7 @@ export async function authMiddleware(c, next) {
 ### Create API Client Package
 
 ```bash
-python scripts/generate_package.py api-client --type library
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py api-client --type library
 ```
 
 `packages/api-client/src/index.ts`:

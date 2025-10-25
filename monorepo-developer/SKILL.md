@@ -87,7 +87,7 @@ my-monorepo/
 Create a new monorepo with Bun, Hono backend, and React frontend:
 
 ```bash
-python scripts/init_project.py <project-name> [options]
+python ~/.claude/skills/monorepo-developer/scripts/init_project.py <project-name> [options]
 ```
 
 **Options:**
@@ -96,7 +96,7 @@ python scripts/init_project.py <project-name> [options]
 
 **Example:**
 ```bash
-python scripts/init_project.py my-monorepo
+python ~/.claude/skills/monorepo-developer/scripts/init_project.py my-monorepo
 ```
 
 This creates:
@@ -112,7 +112,7 @@ This creates:
 Generate a new package in the monorepo:
 
 ```bash
-python scripts/generate_package.py <package-name> [--type <type>] [--project-path <path>]
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py <package-name> [--type <type>] [--project-path <path>]
 ```
 
 **Package Types:**
@@ -122,9 +122,9 @@ python scripts/generate_package.py <package-name> [--type <type>] [--project-pat
 
 **Example:**
 ```bash
-python scripts/generate_package.py api-service --type backend
-python scripts/generate_package.py admin-panel --type frontend
-python scripts/generate_package.py utils --type library
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py api-service --type backend
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py admin-panel --type frontend
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py utils --type library
 ```
 
 ### 3. Add shadcn/ui Components
@@ -132,12 +132,12 @@ python scripts/generate_package.py utils --type library
 Add shadcn/ui components to frontend packages:
 
 ```bash
-python scripts/add_component.py [components...] [--package <name>] [--project-path <path>]
+python ~/.claude/skills/monorepo-developer/scripts/add_component.py [components...] [--package <name>] [--project-path <path>]
 ```
 
 **Example:**
 ```bash
-python scripts/add_component.py button card dialog --package frontend
+python ~/.claude/skills/monorepo-developer/scripts/add_component.py button card dialog --package frontend
 ```
 
 ### 4. Generate React Components
@@ -145,7 +145,7 @@ python scripts/add_component.py button card dialog --package frontend
 Generate new React components with various templates:
 
 ```bash
-python scripts/generate_component.py <component-name> [--type <type>] [--directory <dir>] [--package <name>]
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py <component-name> [--type <type>] [--directory <dir>] [--package <name>]
 ```
 
 **Component Types:**
@@ -159,9 +159,9 @@ python scripts/generate_component.py <component-name> [--type <type>] [--directo
 
 **Example:**
 ```bash
-python scripts/generate_component.py UserCard --type card --package frontend
-python scripts/generate_component.py LoginForm --type form --package frontend
-python scripts/generate_component.py UserList --type list --directory features/users
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py UserCard --type card --package frontend
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py LoginForm --type form --package frontend
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py UserList --type list --directory features/users
 ```
 
 ### 5. Generate Custom Hooks
@@ -169,7 +169,7 @@ python scripts/generate_component.py UserList --type list --directory features/u
 Generate custom React hooks:
 
 ```bash
-python scripts/generate_hook.py <hook-name> [--type <type>] [--package <name>]
+python ~/.claude/skills/monorepo-developer/scripts/generate_hook.py <hook-name> [--type <type>] [--package <name>]
 ```
 
 **Hook Types:**
@@ -184,9 +184,9 @@ python scripts/generate_hook.py <hook-name> [--type <type>] [--package <name>]
 
 **Example:**
 ```bash
-python scripts/generate_hook.py useUserData --type fetch --package frontend
-python scripts/generate_hook.py useLocalStorage --type local-storage
-python scripts/generate_hook.py useDebounce --type debounce
+python ~/.claude/skills/monorepo-developer/scripts/generate_hook.py useUserData --type fetch --package frontend
+python ~/.claude/skills/monorepo-developer/scripts/generate_hook.py useLocalStorage --type local-storage
+python ~/.claude/skills/monorepo-developer/scripts/generate_hook.py useDebounce --type debounce
 ```
 
 ### 6. Generate Pages
@@ -194,7 +194,7 @@ python scripts/generate_hook.py useDebounce --type debounce
 Generate new React pages:
 
 ```bash
-python scripts/generate_page.py <page-name> [--type <type>] [--package <name>]
+python ~/.claude/skills/monorepo-developer/scripts/generate_page.py <page-name> [--type <type>] [--package <name>]
 ```
 
 **Page Types:**
@@ -206,9 +206,9 @@ python scripts/generate_page.py <page-name> [--type <type>] [--package <name>]
 
 **Example:**
 ```bash
-python scripts/generate_page.py Dashboard --type dashboard --package frontend
-python scripts/generate_page.py UserList --type list --package frontend
-python scripts/generate_page.py UserDetail --type detail --package frontend
+python ~/.claude/skills/monorepo-developer/scripts/generate_page.py Dashboard --type dashboard --package frontend
+python ~/.claude/skills/monorepo-developer/scripts/generate_page.py UserList --type list --package frontend
+python ~/.claude/skills/monorepo-developer/scripts/generate_page.py UserDetail --type detail --package frontend
 ```
 
 ### 7. Generate API Documentation
@@ -216,7 +216,7 @@ python scripts/generate_page.py UserDetail --type detail --package frontend
 Generate API documentation for backend services:
 
 ```bash
-python scripts/generate_docs.py <api-name> [--type <type>] [--package <name>]
+python ~/.claude/skills/monorepo-developer/scripts/generate_docs.py <api-name> [--type <type>] [--package <name>]
 ```
 
 **Documentation Types:**
@@ -225,8 +225,8 @@ python scripts/generate_docs.py <api-name> [--type <type>] [--package <name>]
 
 **Example:**
 ```bash
-python scripts/generate_docs.py UserAPI --type markdown
-python scripts/generate_docs.py ProductAPI --type openapi
+python ~/.claude/skills/monorepo-developer/scripts/generate_docs.py UserAPI --type markdown
+python ~/.claude/skills/monorepo-developer/scripts/generate_docs.py ProductAPI --type openapi
 ```
 
 ### 8. Add Authentication
@@ -234,7 +234,7 @@ python scripts/generate_docs.py ProductAPI --type openapi
 Add authentication to backend packages:
 
 ```bash
-python scripts/add_auth.py [--type <type>] [--package <name>]
+python ~/.claude/skills/monorepo-developer/scripts/add_auth.py [--type <type>] [--package <name>]
 ```
 
 **Authentication Types:**
@@ -250,9 +250,9 @@ python scripts/add_auth.py [--type <type>] [--package <name>]
 
 **Example:**
 ```bash
-python scripts/add_auth.py --type local
-python scripts/add_auth.py --type google
-python scripts/add_auth.py --type both
+python ~/.claude/skills/monorepo-developer/scripts/add_auth.py --type local
+python ~/.claude/skills/monorepo-developer/scripts/add_auth.py --type google
+python ~/.claude/skills/monorepo-developer/scripts/add_auth.py --type both
 ```
 
 ### 9. Add Avatar Upload
@@ -260,7 +260,7 @@ python scripts/add_auth.py --type both
 Add avatar upload functionality:
 
 ```bash
-python scripts/add_avatar.py [--type <type>] [--package <name>]
+python ~/.claude/skills/monorepo-developer/scripts/add_avatar.py [--type <type>] [--package <name>]
 ```
 
 **Features:**
@@ -279,8 +279,8 @@ python scripts/add_avatar.py [--type <type>] [--package <name>]
 
 **Example:**
 ```bash
-python scripts/add_avatar.py --type backend
-python scripts/add_avatar.py --type frontend
+python ~/.claude/skills/monorepo-developer/scripts/add_avatar.py --type backend
+python ~/.claude/skills/monorepo-developer/scripts/add_avatar.py --type frontend
 ```
 
 ### 10. Validate Skill
@@ -288,7 +288,7 @@ python scripts/add_avatar.py --type frontend
 Validate the skill structure and files:
 
 ```bash
-python scripts/validate_skill.py
+python ~/.claude/skills/monorepo-developer/scripts/validate_skill.py
 ```
 
 ## Usage Guidelines
@@ -297,7 +297,7 @@ python scripts/validate_skill.py
 
 ```bash
 # Initialize project
-python scripts/init_project.py my-app
+python ~/.claude/skills/monorepo-developer/scripts/init_project.py my-app
 
 # Navigate to project
 cd my-app
@@ -310,13 +310,13 @@ bun run dev
 
 ```bash
 # Generate backend service
-python scripts/generate_package.py auth-service --type backend
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py auth-service --type backend
 
 # Generate frontend app
-python scripts/generate_package.py dashboard --type frontend
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py dashboard --type frontend
 
 # Generate shared library
-python scripts/generate_package.py common --type library
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py common --type library
 ```
 
 ### Development Workflow

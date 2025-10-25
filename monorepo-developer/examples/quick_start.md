@@ -3,7 +3,7 @@
 ## 1. Create a New Monorepo
 
 ```bash
-python scripts/init_project.py my-app
+python ~/.claude/skills/monorepo-developer/scripts/init_project.py my-app
 cd my-app
 ```
 
@@ -97,7 +97,7 @@ npx shadcn@latest add input
 Or use the script:
 
 ```bash
-python scripts/add_component.py --preset forms
+python ~/.claude/skills/monorepo-developer/scripts/add_component.py --preset forms
 ```
 
 ## 6. Create a React Component
@@ -175,7 +175,7 @@ export default App
 ### Backend Service
 
 ```bash
-python scripts/generate_package.py auth-service --type backend
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py auth-service --type backend
 cd packages/auth-service
 bun run dev
 ```
@@ -183,7 +183,7 @@ bun run dev
 ### Frontend App
 
 ```bash
-python scripts/generate_package.py admin-panel --type frontend
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py admin-panel --type frontend
 cd packages/admin-panel
 bun run dev
 ```
@@ -191,7 +191,7 @@ bun run dev
 ### Shared Library
 
 ```bash
-python scripts/generate_package.py common --type library
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py common --type library
 ```
 
 ## 9. Build for Production

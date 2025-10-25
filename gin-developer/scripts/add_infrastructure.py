@@ -3,26 +3,26 @@
 Add infrastructure components to a Gin project.
 
 Usage:
-    python add_infrastructure.py --type=<type> --provider=<provider> [--project-path=<path>]
+    python ~/.claude/skills/gin-developer/scripts/add_infrastructure.py --type=<type> --provider=<provider> [--project-path=<path>]
 
 Examples:
     # Storage
-    python add_infrastructure.py --type=storage --provider=local
-    python add_infrastructure.py --type=storage --provider=s3
-    python add_infrastructure.py --type=storage --provider=gcs
+    python ~/.claude/skills/gin-developer/scripts/add_infrastructure.py --type=storage --provider=local
+    python ~/.claude/skills/gin-developer/scripts/add_infrastructure.py --type=storage --provider=s3
+    python ~/.claude/skills/gin-developer/scripts/add_infrastructure.py --type=storage --provider=gcs
 
     # Cache
-    python add_infrastructure.py --type=cache --provider=redis
-    python add_infrastructure.py --type=cache --provider=memory
+    python ~/.claude/skills/gin-developer/scripts/add_infrastructure.py --type=cache --provider=redis
+    python ~/.claude/skills/gin-developer/scripts/add_infrastructure.py --type=cache --provider=memory
 
     # Queue
-    python add_infrastructure.py --type=queue --provider=redis
-    python add_infrastructure.py --type=queue --provider=kafka
-    python add_infrastructure.py --type=queue --provider=rabbitmq
+    python ~/.claude/skills/gin-developer/scripts/add_infrastructure.py --type=queue --provider=redis
+    python ~/.claude/skills/gin-developer/scripts/add_infrastructure.py --type=queue --provider=kafka
+    python ~/.claude/skills/gin-developer/scripts/add_infrastructure.py --type=queue --provider=rabbitmq
 
     # Email
-    python add_infrastructure.py --type=email --provider=smtp
-    python add_infrastructure.py --type=email --provider=sendgrid
+    python ~/.claude/skills/gin-developer/scripts/add_infrastructure.py --type=email --provider=smtp
+    python ~/.claude/skills/gin-developer/scripts/add_infrastructure.py --type=email --provider=sendgrid
 """
 
 import os

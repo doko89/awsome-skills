@@ -3,7 +3,7 @@
 Validate the gin-developer skill structure and scripts.
 
 Usage:
-    python validate_skill.py
+    python ~/.claude/skills/gin-developer/scripts/validate_skill.py
 """
 
 import os
@@ -255,9 +255,9 @@ def main():
         print("  2. Test generate_domain.py by generating a domain")
         print("  3. Run the generated project to ensure it works")
         print("\nExample:")
-        print("  python scripts/init_project.py test-api --module-path github.com/test/test-api")
+        print("  python ~/.claude/skills/gin-developer/scripts/init_project.py test-api --module-path github.com/test/test-api")
         print("  cd test-api")
-        print("  python ../scripts/generate_domain.py user --fields 'name:string,email:string'")
+        print("  python ~/.claude/skills/gin-developer/scripts/generate_domain.py user --fields 'name:string,email:string'")
         sys.exit(0)
     else:
         sys.exit(1)

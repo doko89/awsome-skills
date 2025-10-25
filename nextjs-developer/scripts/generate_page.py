@@ -313,7 +313,7 @@ def main():
         print("  npx shadcn@latest add button input label card")
     elif args.type == "protected":
         print("\nNote: Make sure NextAuth is configured:")
-        print("  python ../scripts/add_auth.py --provider local")
+        print("  python ~/.claude/skills/nextjs-developer/scripts/add_auth.py --provider local")
 
 
 if __name__ == "__main__":

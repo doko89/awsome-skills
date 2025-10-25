@@ -341,8 +341,8 @@ def main():
     print("  npx shadcn@latest add button")
     print("  npx shadcn@latest add card")
     print("\nTo add authentication:")
-    print("  python ../scripts/add_auth.py --provider local")
-    print("  python ../scripts/add_auth.py --provider google")
+    print("  python ~/.claude/skills/nextjs-developer/scripts/add_auth.py --provider local")
+    print("  python ~/.claude/skills/nextjs-developer/scripts/add_auth.py --provider google")
 
 
 if __name__ == "__main__":

@@ -17,7 +17,7 @@ These scripts help you quickly scaffold common patterns and maintain consistency
 ### Basic Usage
 
 ```bash
-python scripts/generate_component.py <component-name> [--type <type>] [--directory <dir>] [--package <name>]
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py <component-name> [--type <type>] [--directory <dir>] [--package <name>]
 ```
 
 ### Component Types
@@ -27,7 +27,7 @@ python scripts/generate_component.py <component-name> [--type <type>] [--directo
 Simple component with props interface:
 
 ```bash
-python scripts/generate_component.py Button --type basic
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py Button --type basic
 ```
 
 Generated structure:
@@ -50,7 +50,7 @@ export function Button({ }: ButtonProps) {
 Component that accepts children:
 
 ```bash
-python scripts/generate_component.py Card --type children
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py Card --type children
 ```
 
 Use for layout components, wrappers, and containers.
@@ -60,7 +60,7 @@ Use for layout components, wrappers, and containers.
 Component with useState hook:
 
 ```bash
-python scripts/generate_component.py Counter --type state
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py Counter --type state
 ```
 
 Includes increment/decrement buttons and state management.
@@ -70,7 +70,7 @@ Includes increment/decrement buttons and state management.
 Form with validation and submission:
 
 ```bash
-python scripts/generate_component.py LoginForm --type form
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py LoginForm --type form
 ```
 
 Includes:
@@ -84,7 +84,7 @@ Includes:
 Card component using shadcn/ui:
 
 ```bash
-python scripts/generate_component.py UserCard --type card
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py UserCard --type card
 ```
 
 Includes:
@@ -97,7 +97,7 @@ Includes:
 List component with rendering:
 
 ```bash
-python scripts/generate_component.py UserList --type list
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py UserList --type list
 ```
 
 Includes:
@@ -110,7 +110,7 @@ Includes:
 Modal/Dialog component:
 
 ```bash
-python scripts/generate_component.py ConfirmDialog --type modal
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py ConfirmDialog --type modal
 ```
 
 Includes:
@@ -123,7 +123,7 @@ Includes:
 #### Custom Directory
 
 ```bash
-python scripts/generate_component.py UserCard --type card --directory features/users
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py UserCard --type card --directory features/users
 ```
 
 Creates: `src/components/features/users/UserCard.tsx`
@@ -131,7 +131,7 @@ Creates: `src/components/features/users/UserCard.tsx`
 #### Target Specific Package
 
 ```bash
-python scripts/generate_component.py Dashboard --type basic --package admin-panel
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py Dashboard --type basic --package admin-panel
 ```
 
 #### Auto-generated Index
@@ -147,7 +147,7 @@ export { UserCard } from './UserCard'
 ### Basic Usage
 
 ```bash
-python scripts/generate_hook.py <hook-name> [--type <type>] [--package <name>]
+python ~/.claude/skills/monorepo-developer/scripts/generate_hook.py <hook-name> [--type <type>] [--package <name>]
 ```
 
 ### Hook Types
@@ -157,7 +157,7 @@ python scripts/generate_hook.py <hook-name> [--type <type>] [--package <name>]
 Simple hook template:
 
 ```bash
-python scripts/generate_hook.py useCounter --type basic
+python ~/.claude/skills/monorepo-developer/scripts/generate_hook.py useCounter --type basic
 ```
 
 #### 2. Fetch Hook
@@ -165,7 +165,7 @@ python scripts/generate_hook.py useCounter --type basic
 Data fetching with loading and error states:
 
 ```bash
-python scripts/generate_hook.py useUserData --type fetch
+python ~/.claude/skills/monorepo-developer/scripts/generate_hook.py useUserData --type fetch
 ```
 
 Returns:
@@ -182,7 +182,7 @@ Returns:
 Persist state to localStorage:
 
 ```bash
-python scripts/generate_hook.py useLocalStorage --type local-storage
+python ~/.claude/skills/monorepo-developer/scripts/generate_hook.py useLocalStorage --type local-storage
 ```
 
 Usage:
@@ -195,7 +195,7 @@ const [value, setValue] = useLocalStorage('key', initialValue)
 Debounce values:
 
 ```bash
-python scripts/generate_hook.py useDebounce --type debounce
+python ~/.claude/skills/monorepo-developer/scripts/generate_hook.py useDebounce --type debounce
 ```
 
 Usage:
@@ -208,7 +208,7 @@ const debouncedValue = useDebounce(value, 500)
 Throttle function calls:
 
 ```bash
-python scripts/generate_hook.py useThrottle --type throttle
+python ~/.claude/skills/monorepo-developer/scripts/generate_hook.py useThrottle --type throttle
 ```
 
 #### 6. Toggle Hook
@@ -216,7 +216,7 @@ python scripts/generate_hook.py useThrottle --type throttle
 Toggle boolean state:
 
 ```bash
-python scripts/generate_hook.py useModal --type toggle
+python ~/.claude/skills/monorepo-developer/scripts/generate_hook.py useModal --type toggle
 ```
 
 Returns:
@@ -235,7 +235,7 @@ Returns:
 Get previous value:
 
 ```bash
-python scripts/generate_hook.py usePrevious --type previous
+python ~/.claude/skills/monorepo-developer/scripts/generate_hook.py usePrevious --type previous
 ```
 
 #### 8. Async Hook
@@ -243,7 +243,7 @@ python scripts/generate_hook.py usePrevious --type previous
 Handle async operations:
 
 ```bash
-python scripts/generate_hook.py useFetchUser --type async
+python ~/.claude/skills/monorepo-developer/scripts/generate_hook.py useFetchUser --type async
 ```
 
 Returns:
@@ -261,7 +261,7 @@ Returns:
 ### Basic Usage
 
 ```bash
-python scripts/generate_page.py <page-name> [--type <type>] [--package <name>]
+python ~/.claude/skills/monorepo-developer/scripts/generate_page.py <page-name> [--type <type>] [--package <name>]
 ```
 
 ### Page Types
@@ -271,7 +271,7 @@ python scripts/generate_page.py <page-name> [--type <type>] [--package <name>]
 Simple page template:
 
 ```bash
-python scripts/generate_page.py About --type basic
+python ~/.claude/skills/monorepo-developer/scripts/generate_page.py About --type basic
 ```
 
 #### 2. List Page
@@ -279,7 +279,7 @@ python scripts/generate_page.py About --type basic
 Page with list, search, and filtering:
 
 ```bash
-python scripts/generate_page.py Users --type list
+python ~/.claude/skills/monorepo-developer/scripts/generate_page.py Users --type list
 ```
 
 Includes:
@@ -293,7 +293,7 @@ Includes:
 Page for viewing item details:
 
 ```bash
-python scripts/generate_page.py UserDetail --type detail
+python ~/.claude/skills/monorepo-developer/scripts/generate_page.py UserDetail --type detail
 ```
 
 Includes:
@@ -307,7 +307,7 @@ Includes:
 Page with form submission:
 
 ```bash
-python scripts/generate_page.py CreateUser --type form
+python ~/.claude/skills/monorepo-developer/scripts/generate_page.py CreateUser --type form
 ```
 
 Includes:
@@ -321,7 +321,7 @@ Includes:
 Dashboard with stats cards:
 
 ```bash
-python scripts/generate_page.py Dashboard --type dashboard
+python ~/.claude/skills/monorepo-developer/scripts/generate_page.py Dashboard --type dashboard
 ```
 
 Includes:
@@ -404,20 +404,20 @@ const { value, setValue, reset } = useMyHook('default')
 
 ```bash
 # 1. Generate pages
-python scripts/generate_page.py UserList --type list
-python scripts/generate_page.py UserDetail --type detail
-python scripts/generate_page.py CreateUser --type form
+python ~/.claude/skills/monorepo-developer/scripts/generate_page.py UserList --type list
+python ~/.claude/skills/monorepo-developer/scripts/generate_page.py UserDetail --type detail
+python ~/.claude/skills/monorepo-developer/scripts/generate_page.py CreateUser --type form
 
 # 2. Generate components
-python scripts/generate_component.py UserCard --type card
-python scripts/generate_component.py UserForm --type form
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py UserCard --type card
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py UserForm --type form
 
 # 3. Generate hooks
-python scripts/generate_hook.py useUsers --type fetch
-python scripts/generate_hook.py useUserForm --type basic
+python ~/.claude/skills/monorepo-developer/scripts/generate_hook.py useUsers --type fetch
+python ~/.claude/skills/monorepo-developer/scripts/generate_hook.py useUserForm --type basic
 
 # 4. Add shadcn/ui components
-python scripts/add_component.py button input label dialog
+python ~/.claude/skills/monorepo-developer/scripts/add_component.py button input label dialog
 ```
 
 ## Tips & Tricks
@@ -484,7 +484,7 @@ Ensure you're in the monorepo root directory:
 
 ```bash
 cd my-monorepo
-python scripts/generate_component.py MyComponent --type basic
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py MyComponent --type basic
 ```
 
 ### Package Not Found
@@ -492,7 +492,7 @@ python scripts/generate_component.py MyComponent --type basic
 Specify the package explicitly:
 
 ```bash
-python scripts/generate_component.py MyComponent --package frontend
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py MyComponent --package frontend
 ```
 
 ### Import Errors

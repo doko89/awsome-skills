@@ -7,7 +7,7 @@
 ### 1. Initialize Project
 
 ```bash
-python scripts/init_project.py my-app
+python ~/.claude/skills/nextjs-developer/scripts/init_project.py my-app
 cd my-app
 ```
 
@@ -15,42 +15,42 @@ cd my-app
 
 ```bash
 # Local authentication
-python ../scripts/add_auth.py --provider local
+python ~/.claude/skills/nextjs-developer/scripts/add_auth.py --provider local
 
 # Google OAuth
-python ../scripts/add_auth.py --provider google
+python ~/.claude/skills/nextjs-developer/scripts/add_auth.py --provider google
 
 # Both
-python ../scripts/add_auth.py --provider both
+python ~/.claude/skills/nextjs-developer/scripts/add_auth.py --provider both
 ```
 
 ### 3. Add UI Components
 
 ```bash
 # Add single component
-python ../scripts/add_component.py button
+python ~/.claude/skills/nextjs-developer/scripts/add_component.py button
 
 # Add preset group
-python ../scripts/add_component.py --preset forms
+python ~/.claude/skills/nextjs-developer/scripts/add_component.py --preset forms
 
 # Add multiple components
-python ../scripts/add_component.py --batch button,card,dialog,input
+python ~/.claude/skills/nextjs-developer/scripts/add_component.py --batch button,card,dialog,input
 ```
 
 ### 4. Generate Pages
 
 ```bash
 # Basic page
-python ../scripts/generate_page.py Dashboard --route dashboard
+python ~/.claude/skills/nextjs-developer/scripts/generate_page.py Dashboard --route dashboard
 
 # Page with data fetching
-python ../scripts/generate_page.py Products --type data
+python ~/.claude/skills/nextjs-developer/scripts/generate_page.py Products --type data
 
 # Form page
-python ../scripts/generate_page.py Contact --type form
+python ~/.claude/skills/nextjs-developer/scripts/generate_page.py Contact --type form
 
 # Protected page (requires auth)
-python ../scripts/generate_page.py Profile --type protected
+python ~/.claude/skills/nextjs-developer/scripts/generate_page.py Profile --type protected
 ```
 
 ### 5. Start Development
@@ -63,13 +63,13 @@ npm run dev
 
 | Script | Purpose | Example |
 |--------|---------|---------|
-| `init_project.py` | Initialize Next.js project | `python scripts/init_project.py my-app` |
-| `add_auth.py` | Add NextAuth.js | `python scripts/add_auth.py --provider local` |
-| `add_component.py` | Add shadcn/ui components | `python scripts/add_component.py button` |
-| `generate_page.py` | Generate pages | `python scripts/generate_page.py Dashboard` |
-| `generate_component.py` | Generate components | `python scripts/generate_component.py Header` |
-| `generate_hook.py` | Generate hooks | `python scripts/generate_hook.py useCounter` |
-| `validate_skill.py` | Validate skill | `python scripts/validate_skill.py` |
+| `init_project.py` | Initialize Next.js project | `python ~/.claude/skills/nextjs-developer/scripts/init_project.py my-app` |
+| `add_auth.py` | Add NextAuth.js | `python ~/.claude/skills/nextjs-developer/scripts/add_auth.py --provider local` |
+| `add_component.py` | Add shadcn/ui components | `python ~/.claude/skills/nextjs-developer/scripts/add_component.py button` |
+| `generate_page.py` | Generate pages | `python ~/.claude/skills/nextjs-developer/scripts/generate_page.py Dashboard` |
+| `generate_component.py` | Generate components | `python ~/.claude/skills/nextjs-developer/scripts/generate_component.py Header` |
+| `generate_hook.py` | Generate hooks | `python ~/.claude/skills/nextjs-developer/scripts/generate_hook.py useCounter` |
+| `validate_skill.py` | Validate skill | `python ~/.claude/skills/nextjs-developer/scripts/validate_skill.py` |
 
 ## Tech Stack
 
@@ -89,27 +89,27 @@ Quick install component groups:
 
 ```bash
 # Forms
-python scripts/add_component.py --preset forms
+python ~/.claude/skills/nextjs-developer/scripts/add_component.py --preset forms
 # Includes: button, input, label, textarea, select, checkbox, radio-group, switch, form
 
 # Data Display
-python scripts/add_component.py --preset data
+python ~/.claude/skills/nextjs-developer/scripts/add_component.py --preset data
 # Includes: table, card, badge, avatar, separator, pagination
 
 # Overlays
-python scripts/add_component.py --preset overlay
+python ~/.claude/skills/nextjs-developer/scripts/add_component.py --preset overlay
 # Includes: dialog, sheet, popover, tooltip, alert-dialog, hover-card
 
 # Navigation
-python scripts/add_component.py --preset navigation
+python ~/.claude/skills/nextjs-developer/scripts/add_component.py --preset navigation
 # Includes: tabs, accordion, dropdown-menu, menubar, navigation-menu, command
 
 # Feedback
-python scripts/add_component.py --preset feedback
+python ~/.claude/skills/nextjs-developer/scripts/add_component.py --preset feedback
 # Includes: toast, alert, progress, skeleton, sonner
 
 # Essential
-python scripts/add_component.py --preset essential
+python ~/.claude/skills/nextjs-developer/scripts/add_component.py --preset essential
 # Includes: button, card, input, label, dialog, toast
 ```
 
@@ -119,7 +119,7 @@ python scripts/add_component.py --preset essential
 
 ```bash
 # 1. Add auth
-python scripts/add_auth.py --provider local
+python ~/.claude/skills/nextjs-developer/scripts/add_auth.py --provider local
 
 # 2. Update .env.local
 DATABASE_URL="postgresql://user:password@localhost:5432/mydb"
@@ -137,7 +137,7 @@ npx drizzle-kit migrate
 
 ```bash
 # 1. Add auth
-python scripts/add_auth.py --provider google
+python ~/.claude/skills/nextjs-developer/scripts/add_auth.py --provider google
 
 # 2. Update .env.local
 DATABASE_URL="postgresql://user:password@localhost:5432/mydb"
@@ -157,31 +157,31 @@ npx drizzle-kit migrate
 
 ### Basic Page
 ```bash
-python scripts/generate_page.py About --route about
+python ~/.claude/skills/nextjs-developer/scripts/generate_page.py About --route about
 ```
 Simple page with heading and content.
 
 ### Data Page (Server Component)
 ```bash
-python scripts/generate_page.py Products --type data
+python ~/.claude/skills/nextjs-developer/scripts/generate_page.py Products --type data
 ```
 Server Component with async data fetching and Suspense.
 
 ### Form Page (Client Component)
 ```bash
-python scripts/generate_page.py Contact --type form
+python ~/.claude/skills/nextjs-developer/scripts/generate_page.py Contact --type form
 ```
 Client Component with form handling.
 
 ### Protected Page
 ```bash
-python scripts/generate_page.py Dashboard --type protected
+python ~/.claude/skills/nextjs-developer/scripts/generate_page.py Dashboard --type protected
 ```
 Server Component with authentication check.
 
 ### API Route
 ```bash
-python scripts/generate_page.py users --type api
+python ~/.claude/skills/nextjs-developer/scripts/generate_page.py users --type api
 ```
 API route with GET and POST handlers.
 
@@ -189,59 +189,59 @@ API route with GET and POST handlers.
 
 ### Basic Component
 ```bash
-python scripts/generate_component.py Header
+python ~/.claude/skills/nextjs-developer/scripts/generate_component.py Header
 ```
 
 ### Component with State
 ```bash
-python scripts/generate_component.py Counter --type state
+python ~/.claude/skills/nextjs-developer/scripts/generate_component.py Counter --type state
 ```
 
 ### Form Component
 ```bash
-python scripts/generate_component.py LoginForm --type form
+python ~/.claude/skills/nextjs-developer/scripts/generate_component.py LoginForm --type form
 ```
 
 ### Card Component
 ```bash
-python scripts/generate_component.py ProductCard --type card
+python ~/.claude/skills/nextjs-developer/scripts/generate_component.py ProductCard --type card
 ```
 
 ### List Component
 ```bash
-python scripts/generate_component.py UserList --type list
+python ~/.claude/skills/nextjs-developer/scripts/generate_component.py UserList --type list
 ```
 
 ## Hook Types
 
 ### Basic Hook
 ```bash
-python scripts/generate_hook.py useCounter
+python ~/.claude/skills/nextjs-developer/scripts/generate_hook.py useCounter
 ```
 
 ### Fetch Hook
 ```bash
-python scripts/generate_hook.py useUsers --type fetch
+python ~/.claude/skills/nextjs-developer/scripts/generate_hook.py useUsers --type fetch
 ```
 
 ### LocalStorage Hook
 ```bash
-python scripts/generate_hook.py useTheme --type local-storage
+python ~/.claude/skills/nextjs-developer/scripts/generate_hook.py useTheme --type local-storage
 ```
 
 ### Debounce Hook
 ```bash
-python scripts/generate_hook.py useDebounce --type debounce
+python ~/.claude/skills/nextjs-developer/scripts/generate_hook.py useDebounce --type debounce
 ```
 
 ### Media Query Hook
 ```bash
-python scripts/generate_hook.py useMediaQuery --type media-query
+python ~/.claude/skills/nextjs-developer/scripts/generate_hook.py useMediaQuery --type media-query
 ```
 
 ### Toggle Hook
 ```bash
-python scripts/generate_hook.py useToggle --type toggle
+python ~/.claude/skills/nextjs-developer/scripts/generate_hook.py useToggle --type toggle
 ```
 
 ## Project Structure
@@ -325,10 +325,10 @@ Add components from custom registries:
 
 ```bash
 # AI components
-python scripts/add_component.py --registry https://www.shadcn.io/registry/ai.json
+python ~/.claude/skills/nextjs-developer/scripts/add_component.py --registry https://www.shadcn.io/registry/ai.json
 
 # Your custom registry
-python scripts/add_component.py --registry https://your-domain.com/registry.json
+python ~/.claude/skills/nextjs-developer/scripts/add_component.py --registry https://your-domain.com/registry.json
 ```
 
 ## Documentation

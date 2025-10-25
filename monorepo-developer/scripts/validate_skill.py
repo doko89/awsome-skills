@@ -222,9 +222,9 @@ def main():
         print("  2. Test generate_package.py by generating a package")
         print("  3. Test add_component.py by adding components")
         print("\nExample:")
-        print("  python scripts/init_project.py test-monorepo")
+        print("  python ~/.claude/skills/monorepo-developer/scripts/init_project.py test-monorepo")
         print("  cd test-monorepo")
-        print("  python ../scripts/generate_package.py api --type backend")
+        print("  python ~/.claude/skills/monorepo-developer/scripts/generate_package.py api --type backend")
         sys.exit(0)
     else:
         sys.exit(1)

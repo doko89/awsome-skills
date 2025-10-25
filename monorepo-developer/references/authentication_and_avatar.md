@@ -16,7 +16,7 @@ The monorepo-developer skill provides two powerful scripts:
 Local authentication uses email and password:
 
 ```bash
-python scripts/add_auth.py --type local
+python ~/.claude/skills/monorepo-developer/scripts/add_auth.py --type local
 ```
 
 **Features:**
@@ -68,7 +68,7 @@ curl -H "Authorization: Bearer TOKEN" \
 Google OAuth allows users to sign in with their Google account:
 
 ```bash
-python scripts/add_auth.py --type google
+python ~/.claude/skills/monorepo-developer/scripts/add_auth.py --type google
 ```
 
 **Features:**
@@ -107,7 +107,7 @@ curl -X POST http://localhost:3000/api/auth/google \
 Use both local and Google authentication:
 
 ```bash
-python scripts/add_auth.py --type both
+python ~/.claude/skills/monorepo-developer/scripts/add_auth.py --type both
 ```
 
 **Features:**
@@ -139,7 +139,7 @@ GET /auth/me - Get current user
 Add avatar upload to your backend:
 
 ```bash
-python scripts/add_avatar.py --type backend
+python ~/.claude/skills/monorepo-developer/scripts/add_avatar.py --type backend
 ```
 
 **Features:**
@@ -226,7 +226,7 @@ curl -X DELETE http://localhost:3000/api/avatar \
 Add avatar upload component to your frontend:
 
 ```bash
-python scripts/add_avatar.py --type frontend
+python ~/.claude/skills/monorepo-developer/scripts/add_avatar.py --type frontend
 ```
 
 **Component Usage:**

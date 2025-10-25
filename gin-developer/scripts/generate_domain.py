@@ -3,10 +3,10 @@
 Generate domain components for a Gin DDD project.
 
 Usage:
-    python generate_domain.py <domain-name> [--fields <field1:type1,field2:type2>] [--project-path <path>]
+    python ~/.claude/skills/gin-developer/scripts/generate_domain.py <domain-name> [--fields <field1:type1,field2:type2>] [--project-path <path>]
 
 Example:
-    python generate_domain.py user --fields "name:string,email:string,age:int,active:bool"
+    python ~/.claude/skills/gin-developer/scripts/generate_domain.py user --fields "name:string,email:string,age:int,active:bool"
 """
 
 import os

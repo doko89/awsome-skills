@@ -44,7 +44,7 @@ monorepo-developer/
 
 **Penggunaan**:
 ```bash
-python scripts/init_project.py my-monorepo [--skip-git] [--skip-install]
+python ~/.claude/skills/monorepo-developer/scripts/init_project.py my-monorepo [--skip-git] [--skip-install]
 ```
 
 **Membuat**:
@@ -61,7 +61,7 @@ python scripts/init_project.py my-monorepo [--skip-git] [--skip-install]
 
 **Penggunaan**:
 ```bash
-python scripts/generate_package.py <package-name> --type <type> [--project-path <path>]
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py <package-name> --type <type> [--project-path <path>]
 ```
 
 **Package Types**:
@@ -71,9 +71,9 @@ python scripts/generate_package.py <package-name> --type <type> [--project-path 
 
 **Contoh**:
 ```bash
-python scripts/generate_package.py api-service --type backend
-python scripts/generate_package.py admin-panel --type frontend
-python scripts/generate_package.py utils --type library
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py api-service --type backend
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py admin-panel --type frontend
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py utils --type library
 ```
 
 ### 3. add_component.py
@@ -81,14 +81,14 @@ python scripts/generate_package.py utils --type library
 
 **Penggunaan**:
 ```bash
-python scripts/add_component.py [components...] [--package <name>] [--project-path <path>]
+python ~/.claude/skills/monorepo-developer/scripts/add_component.py [components...] [--package <name>] [--project-path <path>]
 ```
 
 **Contoh**:
 ```bash
-python scripts/add_component.py button card dialog
-python scripts/add_component.py --preset forms
-python scripts/add_component.py --list
+python ~/.claude/skills/monorepo-developer/scripts/add_component.py button card dialog
+python ~/.claude/skills/monorepo-developer/scripts/add_component.py --preset forms
+python ~/.claude/skills/monorepo-developer/scripts/add_component.py --list
 ```
 
 ### 4. generate_component.py
@@ -96,7 +96,7 @@ python scripts/add_component.py --list
 
 **Penggunaan**:
 ```bash
-python scripts/generate_component.py <component-name> [--type <type>] [--directory <dir>] [--package <name>]
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py <component-name> [--type <type>] [--directory <dir>] [--package <name>]
 ```
 
 **Component Types**:
@@ -110,9 +110,9 @@ python scripts/generate_component.py <component-name> [--type <type>] [--directo
 
 **Contoh**:
 ```bash
-python scripts/generate_component.py UserCard --type card
-python scripts/generate_component.py LoginForm --type form
-python scripts/generate_component.py UserList --type list --directory features/users
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py UserCard --type card
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py LoginForm --type form
+python ~/.claude/skills/monorepo-developer/scripts/generate_component.py UserList --type list --directory features/users
 ```
 
 ### 5. generate_hook.py
@@ -120,7 +120,7 @@ python scripts/generate_component.py UserList --type list --directory features/u
 
 **Penggunaan**:
 ```bash
-python scripts/generate_hook.py <hook-name> [--type <type>] [--package <name>]
+python ~/.claude/skills/monorepo-developer/scripts/generate_hook.py <hook-name> [--type <type>] [--package <name>]
 ```
 
 **Hook Types**:
@@ -135,9 +135,9 @@ python scripts/generate_hook.py <hook-name> [--type <type>] [--package <name>]
 
 **Contoh**:
 ```bash
-python scripts/generate_hook.py useUserData --type fetch
-python scripts/generate_hook.py useLocalStorage --type local-storage
-python scripts/generate_hook.py useDebounce --type debounce
+python ~/.claude/skills/monorepo-developer/scripts/generate_hook.py useUserData --type fetch
+python ~/.claude/skills/monorepo-developer/scripts/generate_hook.py useLocalStorage --type local-storage
+python ~/.claude/skills/monorepo-developer/scripts/generate_hook.py useDebounce --type debounce
 ```
 
 ### 6. generate_page.py
@@ -145,7 +145,7 @@ python scripts/generate_hook.py useDebounce --type debounce
 
 **Penggunaan**:
 ```bash
-python scripts/generate_page.py <page-name> [--type <type>] [--package <name>]
+python ~/.claude/skills/monorepo-developer/scripts/generate_page.py <page-name> [--type <type>] [--package <name>]
 ```
 
 **Page Types**:
@@ -157,9 +157,9 @@ python scripts/generate_page.py <page-name> [--type <type>] [--package <name>]
 
 **Contoh**:
 ```bash
-python scripts/generate_page.py Dashboard --type dashboard
-python scripts/generate_page.py UserList --type list
-python scripts/generate_page.py UserDetail --type detail
+python ~/.claude/skills/monorepo-developer/scripts/generate_page.py Dashboard --type dashboard
+python ~/.claude/skills/monorepo-developer/scripts/generate_page.py UserList --type list
+python ~/.claude/skills/monorepo-developer/scripts/generate_page.py UserDetail --type detail
 ```
 
 ### 7. validate_skill.py
@@ -167,7 +167,7 @@ python scripts/generate_page.py UserDetail --type detail
 
 **Penggunaan**:
 ```bash
-python scripts/validate_skill.py
+python ~/.claude/skills/monorepo-developer/scripts/validate_skill.py
 ```
 
 **Checks**:
@@ -271,7 +271,7 @@ Advanced patterns untuk:
 
 ### 1. Create Monorepo
 ```bash
-python scripts/init_project.py my-app
+python ~/.claude/skills/monorepo-developer/scripts/init_project.py my-app
 cd my-app
 ```
 
@@ -282,13 +282,13 @@ bun run dev
 
 ### 3. Generate Packages
 ```bash
-python scripts/generate_package.py api --type backend
-python scripts/generate_package.py admin --type frontend
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py api --type backend
+python ~/.claude/skills/monorepo-developer/scripts/generate_package.py admin --type frontend
 ```
 
 ### 4. Add Components
 ```bash
-python scripts/add_component.py --preset forms --package frontend
+python ~/.claude/skills/monorepo-developer/scripts/add_component.py --preset forms --package frontend
 ```
 
 ## 📊 Tech Stack Versions
@@ -365,11 +365,11 @@ Skill ini cocok untuk:
 
 ## 📝 Next Steps
 
-1. **Initialize Project**: `python scripts/init_project.py my-app`
+1. **Initialize Project**: `python ~/.claude/skills/monorepo-developer/scripts/init_project.py my-app`
 2. **Explore Structure**: `cd my-app && ls -la`
 3. **Start Development**: `bun run dev`
-4. **Generate Packages**: `python scripts/generate_package.py ...`
-5. **Add Components**: `python scripts/add_component.py ...`
+4. **Generate Packages**: `python ~/.claude/skills/monorepo-developer/scripts/generate_package.py ...`
+5. **Add Components**: `python ~/.claude/skills/monorepo-developer/scripts/add_component.py ...`
 6. **Build & Deploy**: `bun run build`
 
 ## 📞 Support

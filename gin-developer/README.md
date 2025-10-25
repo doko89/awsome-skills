@@ -29,7 +29,7 @@ This skill provides tools and guidance for building production-ready Go web APIs
 ### 1. Initialize a New Project
 
 ```bash
-python scripts/init_project.py my-api
+python ~/.claude/skills/gin-developer/scripts/init_project.py my-api
 cd my-api
 ```
 
@@ -51,7 +51,7 @@ cp .env.example .env
 ### 3. Generate Your First Domain
 
 ```bash
-python scripts/generate_domain.py user --fields "name:string,email:string,age:int,active:bool"
+python ~/.claude/skills/gin-developer/scripts/generate_domain.py user --fields "name:string,email:string,age:int,active:bool"
 ```
 
 This generates:
@@ -95,7 +95,7 @@ go run cmd/api/main.go
 ### 6. Add Authentication (Optional)
 
 ```bash
-python scripts/add_auth.py
+python ~/.claude/skills/gin-developer/scripts/add_auth.py
 go get github.com/golang-jwt/jwt/v5 golang.org/x/crypto/bcrypt
 ```
 
@@ -182,7 +182,7 @@ my-api/
 Initialize a new Gin project with DDD structure.
 
 ```bash
-python scripts/init_project.py <project-name> [--module-path <module-path>]
+python ~/.claude/skills/gin-developer/scripts/init_project.py <project-name> [--module-path <module-path>]
 ```
 
 **Options:**
@@ -191,9 +191,9 @@ python scripts/init_project.py <project-name> [--module-path <module-path>]
 
 **Example:**
 ```bash
-python scripts/init_project.py ecommerce-api
+python ~/.claude/skills/gin-developer/scripts/init_project.py ecommerce-api
 # or with custom module path
-python scripts/init_project.py ecommerce-api --module-path github.com/mycompany/ecommerce-api
+python ~/.claude/skills/gin-developer/scripts/init_project.py ecommerce-api --module-path github.com/mycompany/ecommerce-api
 ```
 
 ### generate_domain.py
@@ -201,7 +201,7 @@ python scripts/init_project.py ecommerce-api --module-path github.com/mycompany/
 Generate domain components with CRUD operations.
 
 ```bash
-python scripts/generate_domain.py <domain-name> [--fields <field1:type1,field2:type2>] [--project-path <path>]
+python ~/.claude/skills/gin-developer/scripts/generate_domain.py <domain-name> [--fields <field1:type1,field2:type2>] [--project-path <path>]
 ```
 
 **Options:**
@@ -220,13 +220,13 @@ python scripts/generate_domain.py <domain-name> [--fields <field1:type1,field2:t
 **Examples:**
 ```bash
 # User domain
-python scripts/generate_domain.py user --fields "name:string,email:string,age:int,active:bool"
+python ~/.claude/skills/gin-developer/scripts/generate_domain.py user --fields "name:string,email:string,age:int,active:bool"
 
 # Product domain
-python scripts/generate_domain.py product --fields "name:string,description:string,price:float64,stock:int"
+python ~/.claude/skills/gin-developer/scripts/generate_domain.py product --fields "name:string,description:string,price:float64,stock:int"
 
 # Order domain
-python scripts/generate_domain.py order --fields "user_id:uuid,total:float64,status:string,created_at:time"
+python ~/.claude/skills/gin-developer/scripts/generate_domain.py order --fields "user_id:uuid,total:float64,status:string,created_at:time"
 ```
 
 ### add_auth.py
@@ -234,7 +234,7 @@ python scripts/generate_domain.py order --fields "user_id:uuid,total:float64,sta
 Add JWT authentication to your project (local, Google OAuth, or both).
 
 ```bash
-python scripts/add_auth.py [--project-path <path>] [--provider <local|google|both>]
+python ~/.claude/skills/gin-developer/scripts/add_auth.py [--project-path <path>] [--provider <local|google|both>]
 ```
 
 **Providers:**
@@ -254,9 +254,9 @@ python scripts/add_auth.py [--project-path <path>] [--provider <local|google|bot
 **Examples:**
 ```bash
 cd my-api
-python ../scripts/add_auth.py --provider=both
-python ../scripts/add_auth.py --provider=local
-python ../scripts/add_auth.py --provider=google
+python ~/.claude/skills/gin-developer/scripts/add_auth.py --provider=both
+python ~/.claude/skills/gin-developer/scripts/add_auth.py --provider=local
+python ~/.claude/skills/gin-developer/scripts/add_auth.py --provider=google
 ```
 
 ---
@@ -266,33 +266,33 @@ python ../scripts/add_auth.py --provider=google
 Add infrastructure components like storage, cache, queue, email.
 
 ```bash
-python scripts/add_infrastructure.py --type=<type> --provider=<provider> [--project-path=<path>]
+python ~/.claude/skills/gin-developer/scripts/add_infrastructure.py --type=<type> --provider=<provider> [--project-path=<path>]
 ```
 
 **Storage:**
 ```bash
-python scripts/add_infrastructure.py --type=storage --provider=local
-python scripts/add_infrastructure.py --type=storage --provider=s3
-python scripts/add_infrastructure.py --type=storage --provider=gcs
+python ~/.claude/skills/gin-developer/scripts/add_infrastructure.py --type=storage --provider=local
+python ~/.claude/skills/gin-developer/scripts/add_infrastructure.py --type=storage --provider=s3
+python ~/.claude/skills/gin-developer/scripts/add_infrastructure.py --type=storage --provider=gcs
 ```
 
 **Cache:**
 ```bash
-python scripts/add_infrastructure.py --type=cache --provider=redis
-python scripts/add_infrastructure.py --type=cache --provider=memory
+python ~/.claude/skills/gin-developer/scripts/add_infrastructure.py --type=cache --provider=redis
+python ~/.claude/skills/gin-developer/scripts/add_infrastructure.py --type=cache --provider=memory
 ```
 
 **Queue:**
 ```bash
-python scripts/add_infrastructure.py --type=queue --provider=redis
-python scripts/add_infrastructure.py --type=queue --provider=kafka
-python scripts/add_infrastructure.py --type=queue --provider=rabbitmq
+python ~/.claude/skills/gin-developer/scripts/add_infrastructure.py --type=queue --provider=redis
+python ~/.claude/skills/gin-developer/scripts/add_infrastructure.py --type=queue --provider=kafka
+python ~/.claude/skills/gin-developer/scripts/add_infrastructure.py --type=queue --provider=rabbitmq
 ```
 
 **Email:**
 ```bash
-python scripts/add_infrastructure.py --type=email --provider=smtp
-python scripts/add_infrastructure.py --type=email --provider=sendgrid
+python ~/.claude/skills/gin-developer/scripts/add_infrastructure.py --type=email --provider=smtp
+python ~/.claude/skills/gin-developer/scripts/add_infrastructure.py --type=email --provider=sendgrid
 ```
 
 ### add_middleware.py
@@ -300,7 +300,7 @@ python scripts/add_infrastructure.py --type=email --provider=sendgrid
 Add middleware components to your project.
 
 ```bash
-python scripts/add_middleware.py --type=<type> [--project-path=<path>]
+python ~/.claude/skills/gin-developer/scripts/add_middleware.py --type=<type> [--project-path=<path>]
 ```
 
 **Available Middlewares:**
@@ -317,9 +317,9 @@ python scripts/add_middleware.py --type=<type> [--project-path=<path>]
 
 **Examples:**
 ```bash
-python scripts/add_middleware.py --type=cors
-python scripts/add_middleware.py --type=ratelimit
-python scripts/add_middleware.py --type=security
+python ~/.claude/skills/gin-developer/scripts/add_middleware.py --type=cors
+python ~/.claude/skills/gin-developer/scripts/add_middleware.py --type=ratelimit
+python ~/.claude/skills/gin-developer/scripts/add_middleware.py --type=security
 ```
 
 ### generate_docs.py
@@ -327,7 +327,7 @@ python scripts/add_middleware.py --type=security
 Generate Swagger/OpenAPI documentation structure.
 
 ```bash
-python scripts/generate_docs.py [--project-path=<path>]
+python ~/.claude/skills/gin-developer/scripts/generate_docs.py [--project-path=<path>]
 ```
 
 Creates documentation structure with Swagger annotations, response models, and examples.
@@ -400,16 +400,16 @@ See the `references/` directory for detailed guides:
 
 ```bash
 # User management
-python scripts/generate_domain.py user --fields "name:string,email:string,password:string,role:string"
+python ~/.claude/skills/gin-developer/scripts/generate_domain.py user --fields "name:string,email:string,password:string,role:string"
 
 # Product catalog
-python scripts/generate_domain.py product --fields "name:string,description:string,price:float64,stock:int,category:string"
+python ~/.claude/skills/gin-developer/scripts/generate_domain.py product --fields "name:string,description:string,price:float64,stock:int,category:string"
 
 # Order processing
-python scripts/generate_domain.py order --fields "user_id:uuid,total:float64,status:string,payment_method:string"
+python ~/.claude/skills/gin-developer/scripts/generate_domain.py order --fields "user_id:uuid,total:float64,status:string,payment_method:string"
 
 # Category management
-python scripts/generate_domain.py category --fields "name:string,description:string,parent_id:int"
+python ~/.claude/skills/gin-developer/scripts/generate_domain.py category --fields "name:string,description:string,parent_id:int"
 ```
 
 ### Customize Generated Code
